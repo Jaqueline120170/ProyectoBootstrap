@@ -1,97 +1,100 @@
-@charset "UTF-8";
-
 #nav1 {
-	background-color: rgb(202, 243, 255);
+    background-color:rgb(202, 243, 255);
 }
 
-
 .MC {
-	background-color: #f1f1f1;
+    background-color: #f1f1f1;
 }
 
 #tite {
-	font-family: "Kode Mono", monospace;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
-	color: black;
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
 }
 
-#pp {
-	background-color: rgb(202, 243, 255);
+#pp-claro {
+    background-color: rgb(202, 243, 255);
 }
 
-
-#fila {
-	display: flex;
-	
+#pp-oscuro {
+    background-color: #101084;
 }
-
-#nav2 {
-	background-color: rgb(202, 243, 255);
-	height: 500%;
+/**
+* SELECTORES
+* SABER COMO FUNCIONA LA CASCADA
+* ESPECIFICIDAD 
+*/
+body>main > div >#barra{
+    background-color: rgb(202, 243, 255)!important;
+    height: 100%;
 }
 
 .nav-pills .nav-link:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-#bdy {
-	overflow-x: hidden;
-	background-color: #cfcfcf;
+body {
+    overflow-x: hidden;
+    background-color: #cfcfcf;
+    height: 100vh;
 }
 
-#verdes {
-	background-color: rgb(202, 243, 255);
+.fondo-azul-claro {
+    background-color: rgb(202, 243, 255) !important;
 }
 
 #rosa {
-	text-align: center;
-	color:#101084;
+    text-align: center;
+    color:#101084;
 }
 
 #tabla {
-	background-color: rgb(202, 243, 255);
+    background-color:rgb(202, 243, 255);
 }
 
-#rosa {
-	justify-content: center;
-}
-
-#pie {
-	background-color: #101084;
-}
 
 .piepag {
-	color: white;
+    color: white;
 }
 
 .prieba {
-	background-color: rgb(202, 243, 255);
+    background-color: rgb(202, 243, 255);
 }
 
 .btn btn-primary {
-	justify-content: center;
+    justify-content: center;
 }
 
 #verde {
-	text-align: center;
-	color: #101084;
+    text-align: center;
+    color: #101084;
 }
 
-#main {
-	background-color: #f1f1f1;
-}
 #section3{
-	background-color: #101084;
-	color:white;
+    background-color: #101084;
+    color:white;
+    margin:0px;
 }
-#pp1{
-	background-color: #101084;
+main{
+    margin-top: 100px;
+    height: auto;
+    background-color: #f1f1f1;
+    position: fixed;
 }
-#filas{
-	justify-content:center;
+main > div > section {
+    padding: 15px;
 }
-#section3{
-	margin:0px;
+header, footer{
+    height: 100px;
+    position: fixed;
+}
+footer{
+    height: auto;
+    bottom:0;
+    background-color: rgb(202, 243, 255);
+}
+header{
+    top:0;
 }
